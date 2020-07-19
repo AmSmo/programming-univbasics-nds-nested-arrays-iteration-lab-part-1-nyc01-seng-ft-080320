@@ -8,8 +8,9 @@ def find_even_values(src)
     ele = 0
     while < row.length
       if src[row][ele] % 2 == 0
-        evens << 
+        evens << src[row][ele]
       end
+    end
   end
   evens
 end
