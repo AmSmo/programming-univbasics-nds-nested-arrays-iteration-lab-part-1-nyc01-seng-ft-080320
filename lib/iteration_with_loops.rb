@@ -5,10 +5,11 @@ def find_even_values(src)
   evens = []
   row = 0
   while row < src.length
-    src[row].each do |ele|
-      evens << ele if ele.even?
-    end
-    row +=1
+    ele = 0
+    while < row.length
+      if src[row][ele] % 2 == 0
+        evens << 
+      end
   end
   evens
 end
