@@ -17,7 +17,8 @@ def find_even_values(src)
   # end
   # puts evens
   
-  # Annoying WAY that you want
+  # Annoying Way that you want
+  
   evens = []
   row_index = 0
   while row_index < src.length
