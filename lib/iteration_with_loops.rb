@@ -5,7 +5,7 @@ def find_even_values(src)
   evens = []
   row = 0
   while row < src.length
-    row.each do |ele|
+    src[row].each do |ele|
       evens << ele if ele.even?
     end
     row +=1
