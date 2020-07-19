@@ -3,7 +3,9 @@ def find_even_values(src)
   #
   # Output all even values in each nested array
   #EASIEST WAY 
+  
   puts src.flatten.select { |ele| ele.even? }
+  
   # EASY WAY
   # evens = []
   # src.each do |row|
@@ -15,8 +17,21 @@ def find_even_values(src)
   # end
   # puts evens
   
-  # Annoying WAY
-  # evens = []
-  # row_index = 0
+  # Annoying WAY that you want
+  evens = []
+  row_index = 0
+  while row_index < src.length
+    row = src[row_index]
+    ele_index = 0
+    while ele_index < row.length
+      ele = row[ele_index]
+      if ele % 2 == 0
+        evens << ele
+      end
+      ele_index +=1
+    end
+    row_index+=1
+  end
+  puts evens
   
 end
