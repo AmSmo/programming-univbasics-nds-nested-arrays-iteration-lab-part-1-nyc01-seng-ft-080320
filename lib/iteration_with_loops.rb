@@ -4,7 +4,7 @@ def find_even_values(src)
   # Output all even values in each nested array
   #EASIEST WAY 
   
-  puts src.flatten.select { |ele| ele.even? }
+  # puts src.flatten.select { |ele| ele.even? }
   
   # EASY WAY
   # evens = []
