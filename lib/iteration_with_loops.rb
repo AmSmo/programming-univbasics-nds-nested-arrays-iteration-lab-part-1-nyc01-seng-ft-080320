@@ -10,6 +10,7 @@ def find_even_values(src)
       if src[row][ele] % 2 == 0
         evens << src[row][ele]
       end
+      ele +=1
     end
   end
   evens
