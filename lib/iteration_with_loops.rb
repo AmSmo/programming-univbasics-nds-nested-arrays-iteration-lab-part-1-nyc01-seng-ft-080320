@@ -2,7 +2,7 @@ def find_even_values(src)
   # Given an Array of Arrays of Integers ( [ [10, 11], [99, 50, 3, 4], [23, 41] ] ):
   #
   # Output all even values in each nested array
-  evens []
+  evens = []
   row = 0
   while row < src.length
     row.each do |ele|
@@ -10,5 +10,5 @@ def find_even_values(src)
     end
     row +=1
   end
-  even
+  evens
 end
