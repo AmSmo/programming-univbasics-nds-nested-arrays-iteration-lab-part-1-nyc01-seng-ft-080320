@@ -3,14 +3,11 @@ def find_even_values(src)
   #
   # Output all even values in each nested array
   evens = []
-  row = 0
-  while row < src.length
-    ele = 0
-    while ele < src[row].length
-      if src[row][ele] % 2 == 0
-        evens << src[row][ele]
+  src.each do |row|
+    row.each do |ele|
+      if ele % 2 == 0
+        evens << ele
       end
-      ele +=1
     end
   end
   evens
